@@ -3,19 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sharki's personal site: a web development learner's portfolio.">
     <title>Sharki Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="profile-picture">
-            <img src="download.jpg" alt="Profile Picture">
-        </div>
-        <div class="content">
-            <h1>WELCOME TO SHARKI SITE</h1>
-            <p>My name is Sharki, and I am learning web development for my future career.</p>
-            <a href="https://www.instagram.com/zakyndv/" target="_blank" rel="noopener noreferrer" class="btn">About Me</a>
-        </div>
-    </div>
+    <header class="site-header">
+        <a href="#home" class="brand">
+            <img src="download.jpg" alt="Profile Picture" class="avatar">
+            <span>Sharki</span>
+        </a>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="content">
+                    <h1>WELCOME TO SHARKI SITE</h1>
+                    <p>My name is Sharki, and I am learning web development for my future career.</p>
+                    <a href="#about" class="btn">About Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-inner">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Sharki. I'm just getting started with web development and
+                    I'm building this site step by step to practice what I learn.
+                    My goal is to turn this hobby into a career as a web developer.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-alt">
+            <div class="section-inner">
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li class="card">
+                        <h3>HTML</h3>
+                        <p>Structuring pages with clean, semantic markup.</p>
+                    </li>
+                    <li class="card">
+                        <h3>CSS</h3>
+                        <p>Layouts with Flexbox, responsive design, and simple animations.</p>
+                    </li>
+                    <li class="card">
+                        <h3>Git &amp; GitHub</h3>
+                        <p>Version control, branches, and publishing a site online.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-inner">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <article class="card">
+                        <h3>Sharki Site</h3>
+                        <p>My personal website, built with plain HTML and CSS and hosted on GitHub.</p>
+                        <a href="https://github.com/wannabe132/sharki.site" target="_blank" rel="noopener noreferrer" class="link">View on GitHub &rarr;</a>
+                    </article>
+                    <article class="card card-soon">
+                        <h3>Next project</h3>
+                        <p>Something new is on the way. Check back soon.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-alt">
+            <div class="section-inner">
+                <h2>Contact</h2>
+                <p>Want to say hi or work together? Find me here:</p>
+                <div class="contact-links">
+                    <a href="https://www.instagram.com/zakyndv/" target="_blank" rel="noopener noreferrer" class="btn">Instagram</a>
+                    <a href="https://github.com/wannabe132" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Sharki. All rights reserved.</p>
+    </footer>
 </body>
 </html>
